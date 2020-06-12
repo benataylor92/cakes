@@ -7,8 +7,10 @@ import HomePage from '../Pages/HomePage';
 function Navigation() {
     return (
         <BrowserRouter>
-            <Route path="" exact component={HomePage} />
-            <Route path="/1" exact component={BuyACake} />
+            <Switch>
+                <Route path="/" exact component={HomePage} />
+                <Route path="/BuyACake" exact component={BuyACake} />
+            </Switch>
         </BrowserRouter>
     );
 }
