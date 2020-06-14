@@ -9,7 +9,13 @@ function NavigationBar() {
                     <li><a href="/buyacake">Buy a Cake</a></li>
                 </ul>
                 <ul className="Become_A_Baker">
-                    <li><a href="/buyacake">Become a Baker</a></li>
+                    <li><a href="/becomeabaker">Become a Baker</a></li>
+                </ul>
+                <ul className="Login">
+                    <li><a href="/loginPage">Login</a></li>
+                </ul>
+                <ul className="Sign_Up">
+                    <li><a href="/signup">Sign UP</a></li>
                 </ul>
             </nav>
         </div>

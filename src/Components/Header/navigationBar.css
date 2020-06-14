@@ -1,3 +1,25 @@
 .Navigation_Banner {
     text-align: center;
+    width: 500px;
+    /* position: absolute; */
+    right: 25px;
+}
+
+.Buy_A_Cake {
+    display: inline-block;
+}
+
+.Become_A_Baker {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.Login {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.Sign_Up {
+    display: inline-block;
+    padding-left: 10px;
 }
