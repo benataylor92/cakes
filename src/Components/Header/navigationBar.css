@@ -1,8 +1,10 @@
 .Navigation_Banner {
     text-align: center;
-    width: 500px;
-    /* position: absolute; */
-    right: 25px;
+    width: 350px;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    margin-top: -75px;
 }
 
 .Buy_A_Cake {

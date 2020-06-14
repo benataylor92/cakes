@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../Pages/loginPage.css';
 
 function LoginPage() {
+    const [emailaddress, updateEmailAddress ] = useState();
+    const [password, updatePassword ] = useState();
+
     return (
-        <div>Login</div>
-    )
+        <div className="Login-component">   
+            <div className="Login1">Login</div>
+            <form className="Login-form">
+                <div className="Form-group">
+                    <label htmlfor="Email-name">Email Adress</label>
+                    <input type="text" className="Form-control" name="emailAdress" value={emailaddress} />
+                <div>
+                    <label htmlfor="Password">Password</label>
+                    <input type="text" className="Form-control" name="password" value={password} />
+                </div>
+                <div>
+                <button className="Form-button">Login</button>
+                <a className="Register-button" href="/Signup">Sign Up</a>
+                </div>
+                </div>
+            </form>
+        </div>
+    );
 }
 
 export default LoginPage;

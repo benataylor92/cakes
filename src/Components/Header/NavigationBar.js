@@ -15,7 +15,7 @@ function NavigationBar() {
                     <li><a href="/loginPage">Login</a></li>
                 </ul>
                 <ul className="Sign_Up">
-                    <li><a href="/signup">Sign UP</a></li>
+                    <li><a href="/signup">Sign Up</a></li>
                 </ul>
             </nav>
         </div>
