@@ -10,10 +10,10 @@ function LoginPage() {
             <div className="Login1">Login</div>
             <form className="Login-form">
                 <div className="Form-group">
-                    <label htmlfor="Email-name">Email Adress</label>
+                    <label htmlFor="Email-name">Email Adress</label>
                     <input type="text" className="Form-control" name="emailAdress" value={emailaddress} />
                 <div>
-                    <label htmlfor="Password">Password</label>
+                    <label htmlFor="Password">Password</label>
                     <input type="text" className="Form-control" name="password" value={password} />
                 </div>
                 <div>
