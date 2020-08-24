@@ -35,5 +35,5 @@ export default () => {
                 <button type='submit'>Sign Up</button>
             </form>
         </div>
-    )
+    ) 
 };
