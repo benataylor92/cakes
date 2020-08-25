@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
-import { CognitoUserPool } from 'amazon-cognito-identity-js';
+import UserPool from '../Authentication/UserPool';
 
 export default () => {
     const [emailaddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
-
-    const poolData = {
-        UserPoolId: 'eu-west-2_eo0FY3NOV',
-        ClientId: '4lv29c83bl00svq4r9e4pf2k81'
-    };
-
-    const UserPool = new CognitoUserPool(poolData);
 
     const onSubmit = event => {
         event.preventDefault();
@@ -35,5 +28,5 @@ export default () => {
                 <button type='submit'>Sign Up</button>
             </form>
         </div>
-    ) 
+    )
 };
