@@ -1,6 +1,7 @@
 import React from 'react';
 import { Account } from '../Authentication/Accounts';
-import { BrowserRouter as Router, Route, Link, Switch, BrowserRouter } from "react-router-dom"
+import { BrowserRouter as Router, Route, Link, Switch, BrowserRouter } from "react-router-dom";
+import Status from '../Authentication/Status';
 
 import BuyACake from '../Pages/BuyACake';
 import HomePage from '../Pages/HomePage';
@@ -11,6 +12,7 @@ import SignUp from '../Pages/SignUpPage';
 function Navigation() {
     return (
         <Account>
+            <Status />
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={HomePage} />

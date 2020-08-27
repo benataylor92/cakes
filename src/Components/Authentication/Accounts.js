@@ -44,10 +44,19 @@ const Account = props => {
   });
 });
 
+    const logout = () => {
+        const user = Pool.getCurrentUser();
+        if (user) {
+            user.signOut();
+        }
+    }
+
 
     return (
         <AccountContext.Provider value={{
-            authenticate
+            authenticate,
+            getSession,
+            logout
         }}>
             {props.children}
         </AccountContext.Provider>
