@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserPool from '../Authentication/UserPool';
+import '../Pages/signUpPage.css';
 
 export default () => {
     const [emailaddress, setEmailAddress] = useState('');
@@ -15,7 +16,7 @@ export default () => {
     };
 
     return (
-        <div>
+        <div className="Signup_Form">
             <form onSubmit={onSubmit}>
                 <input 
                     value={emailaddress}

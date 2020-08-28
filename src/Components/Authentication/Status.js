@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { AccountContext } from '../Authentication/Accounts';
+import '../Authentication/statusForm.css';
 
 export default () => {
     const [status, setStatus ] = useState(false);
@@ -14,7 +15,7 @@ export default () => {
     }, []);
 
     return (
-        <div>
+        <div className="Status_Form">
             {status ? (
                 <div>
                     You are logge in.

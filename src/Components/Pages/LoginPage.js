@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { AccountContext } from '../Authentication/Accounts';
+import '../Pages/loginPage.css';
 
 export default () => {
     const [emailaddress, setEmailAddress] = useState('');
@@ -19,7 +20,7 @@ export default () => {
     };
 
     return (
-        <div>
+        <div className="Login_Form">
             <form onSubmit={onSubmit}>
                 <input 
                     value={emailaddress}
