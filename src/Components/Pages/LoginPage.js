@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { AccountContext } from '../Authentication/Accounts';
 import '../Pages/loginPage.css';
+import Settings from '../Authentication/Settings';
 
 export default () => {
     const [emailaddress, setEmailAddress] = useState('');
@@ -32,6 +33,7 @@ export default () => {
                 />
                 <button type='submit'>Login</button>
             </form>
+            <Settings />
         </div>
     )
 };
