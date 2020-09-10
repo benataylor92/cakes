@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AccountContext } from '../Authentication/Accounts';
+import ChangePassword from '../Authentication/ChangePassword';
 
 export default () => {
     const [loggedIn, setLoggedIn] = useState(false);
@@ -17,6 +18,8 @@ export default () => {
             {loggedIn && (
                 <>
                     <h1>Settings</h1>
+
+                    <ChangePassword />
                 </>
             )}
         </div>
